@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Alx Target MVD</string>
+    <string name="edit_message">Placeholder text</string>
+    <string name="button_signin">SIGN IN</string>
+    <string name="target_mvd">TARGET MVD</string>
+
+    <string name="lbl_name">NAME</string>
+    <string name="lbl_email">EMAIL</string>
+    <string name="lbl_password">PASSWORD</string>
+    <string name="lbl_confirmpass"> CONFIRM PASSWORD</string>
+    <string name="lbl_forgotpass">Forgot your password?</string>
+    <string name="lbl_fbconnect">CONNECT WITH FACEBOOK</string>
+    <string name="lbl_signup">SIGN UP</string>
+    <string name="lbl_gender">GENDER</string>
+    <string name="lbl_back">GO BACK</string>
+
+    <string name="hint_name">Type your name</string>
+    <string name="hint_email">top@tierlabs.com</string>
+    <string name="hint_password">******</string>
+    <string name="hint_selectgender">Select your Gender</string>
+
+    <string name="errorstr_signin">This password and email don\'t match</string>
+    <string name="errorstr_signupname">you forgot to put your name!</string>
+    <string name="errorstr_signupemail">oops! this email is not valid</string>
+    <string name="errorstr_signuppass">At least 6 characters long</string>
+    <string name="errorstr_signupconfirm">Passwords don\'t match</string>
+    <string name="errorstr_signupgender">You forgot to select your gender</string>
+
+    <string name="error_comm">Server couldn\'t be reached. Please make sure you have network
+        access or try again later</string>
+
+    <string name="fragment_selectgendertitle">Select Gender:</string>
+
+    <string name="facebook_app_id">1742453059353612</string>
+    <string name="title_activity_dboard">Map</string>
+
+    <!--Dashboard -->
+    <string name="dboard_title">Target Points</string>
+    <string name="dboard_newtarget">CREATE NEW TARGET</string>
+    <string name="dboard_mloc">My current location</string>
+
+    <!--profile -->
+    <string name="profile">Profile</string>
+
+    <!--Topics Fragment -->
+    <string name="topic_img">Topic Icon</string>
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/signin_bg">
+
+    <ScrollView
+        android:id="@+id/signUpScroll"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/signUpLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:text="@string/target_mvd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:text="@string/lbl_name" />
+
+            <EditText
+                android:background="@drawable/edittext_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:hint="@string/hint_name"
+                android:gravity="center"
+                android:id="@+id/signUpName" />
+
+            <!-- Invisible validation error msg for the name -->
+            <TextView
+                android:id="@+id/errorSignUpName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/errorstr_signupname"
+                android:textColor="#ed0b0b"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:tag="iserror" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:text="@string/lbl_email" />
+
+            <EditText
+                android:background="@drawable/edittext_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:hint="@string/hint_email"
+                android:gravity="center"
+                android:id="@+id/signupEmail" />
+
+            <!-- Invisible validation error msg for the email -->
+            <TextView
+                android:id="@+id/errorSignUpEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/errorstr_signupemail"
+                android:textColor="#ed0b0b"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:tag="iserror" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:text="@string/lbl_password" />
+
+            <EditText
+                android:background="@drawable/edittext_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:hint="@string/hint_password"
+                android:gravity="center"
+                android:id="@+id/signupPassword" />
+
+            <!-- Invisible validation error msg for the password -->
+            <TextView
+                android:id="@+id/errorSignUpPass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/errorstr_signuppass"
+                android:textColor="#ed0b0b"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:tag="iserror" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:text="@string/lbl_confirmpass" />
+
+            <EditText
+                android:background="@drawable/edittext_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:hint="@string/hint_password"
+                android:gravity="center"
+                android:id="@+id/signupConfirmPass" />
+
+            <!-- Invisible validation error msg for the confirm password -->
+            <TextView
+                android:id="@+id/errorSignUpConfirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/errorstr_signupconfirm"
+                android:textColor="#ed0b0b"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:tag="iserror" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:text="@string/lbl_gender" />
+
+            <TextView
+                android:id="@+id/signupGenderLbl"
+                android:background="@drawable/edittext_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:hint="@string/hint_selectgender"
+                android:gravity="center"
+                android:onClick="showGenderDialog"
+                android:tag="iscustom" />
+
+            <!-- Invisible validation error msg for the gender -->
+            <TextView
+                android:id="@+id/errorSignUpGender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/errorstr_signupgender"
+                android:textColor="#ed0b0b"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:tag="iserror" />
+
+            <Button
+                android:background="@drawable/btn_black"
+                android:text="@string/button_signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="18dp"
+                android:textColor="#fff"
+                android:onClick="signUp" />
+
+            <View
+                android:background="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:textColor="#000"
+                      android:textSize="16sp"
+                      android:gravity="center"
+                      android:text="@string/lbl_back"
+                      android:clickable="true"
+                      android:onClick="goSignIn" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
